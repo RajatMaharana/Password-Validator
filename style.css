@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-height: 100vh;
+  display: flex;
+  background: azure;
+  flex-direction: column;
+}
+
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  padding: 19px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 13px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.logo img {
+  width: 15px;
+}
+.logo span {
+  font-size: 18px;
+  color: #141414;
+  font-style: italic;
+  font-weight: bold;
+} */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 88vh;
+}
+
+.wrapper {
+  background: #fff;
+  width: 450px;
+  padding: 28px;
+  border-radius: 7px;
+}
+.wrapper .pass-field {
+  height: 65px;
+  width: 100%;
+  position: relative;
+}
+.wrapper .content {
+  margin: 20px 0 10px;
+}
+
+.content p {
+  font-size: 1.3rem;
+}
+.content .requirements {
+  margin-top: 20px;
+}
+
+.requirements li {
+  list-style: none;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.requirements li i {
+  font-size: 0.6rem;
+  color: #aaa;
+  width: 20px;
+}
+.requirements li.valid i {
+  font-size: 1.2rem;
+  color: rgb(70, 165, 44);
+}
+.requirements li span {
+  margin-left: 12px;
+}
+.requirements li.valid span {
+  color: rgb(70, 165, 44);
+}
+
+.pass-field input {
+  width: 94%;
+  height: 100%;
+  padding: 0 17px;
+  outline: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+.pass-field i {
+  right: 18px;
+  top: 50%;
+  color: #999;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+footer {
+  background-color: black;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav nav ul {
+    font-size: 22px;
+  }
+  main {
+    min-height: 83vh;
+  }
+  .logo {
+    padding: 6px 0;
+    margin-bottom: 23px;
+  }
+  .logo img {
+    width: 15px;
+  }
+  .logo span {
+    font-size: 20px;
+  }
+  main,
+  .wrapper {
+    padding: 15px;
+  }
+  .wrapper .pass-field {
+    height: 55px;
+  }
+  .pass-field input,
+  .content p {
+    font-size: 1.15rem;
+  }
+  .pass-field i,
+  .requirements li {
+    font-size: 1.1rem;
+  }
+  .requirements li span {
+    margin-left: 7px;
+  }
+  .pass-field input {
+    width: 90%;
+  }
+}
